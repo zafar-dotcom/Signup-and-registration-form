@@ -3,10 +3,58 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  
+    @* <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="854332845836-19d839ng35qnhld97t5vt4u5fop0s95o.apps.googleusercontent.com">*@
+    <meta name="google-signin-client_id" content="422143680280-6u3st7q80u5l3i9ot1agnnvhddnuf8kj.apps.googleusercontent.com">
+
+    <script type="text/javascript">
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                auth2.disconnect();
+            });
+
+        }
+
+        function onLoad() {
+            gapi.load('auth2', function () {
+                gapi.auth2.init();
+            });
+        }
+    </script>
+
+
+
+    <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+
+
+    
+   
+</head>
+@Html.Raw(TempData["LoginSuucessfull"])
 @Html.Raw(TempData["delete"])
 @Html.Raw(TempData["Insertmessage"])
 @Html.Raw(TempData["update"])
+
+
+<body>
+<header>
+   @* <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+        <ul class="navbar-nav flex-grow-1">
+        
+            <li class="nav-item">
+                    <a href="https://localhost:7053/" onclick="signOut();">Sign out</a>
+            </li>
+        </ul>
+    </div>*@
+    </header>
+
 <table class="table">
+
+    
     <thead>
         <tr>
             <th>
@@ -52,6 +100,7 @@
                 @Html.DisplayFor(modelItem => item.Age)
             </td>
             <td>
+
                     @Html.ActionLink("Edit", "Update", new {  id=item.Id}) 
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Delete", "Delete", new {  id=item.Id })
@@ -60,3 +109,5 @@
 }
     </tbody>
 </table>
+    
+</body>

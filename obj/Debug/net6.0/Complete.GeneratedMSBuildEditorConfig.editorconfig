@@ -16,6 +16,34 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\WAQAR COMPUTER\source\repos\Complete
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/WAQAR COMPUTER/source/repos/Complete/Views/Account/GoogleResponse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxHb29nbGVSZXNwb25zZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WAQAR COMPUTER/source/repos/Complete/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WAQAR COMPUTER/source/repos/Complete/Views/Excell/Export.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZWxsXEV4cG9ydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WAQAR COMPUTER/source/repos/Complete/Views/Excell/Exportpdf.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZWxsXEV4cG9ydHBkZi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WAQAR COMPUTER/source/repos/Complete/Views/Excell/ExportToExcell.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZWxsXEV4cG9ydFRvRXhjZWxsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WAQAR COMPUTER/source/repos/Complete/Views/Excell/Export_To_excell.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZWxsXEV4cG9ydF9Ub19leGNlbGwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WAQAR COMPUTER/source/repos/Complete/Views/Excell/ImportExcellSheet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhjZWxsXEltcG9ydEV4Y2VsbFNoZWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/WAQAR COMPUTER/source/repos/Complete/Views/Home/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -46,6 +74,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/WAQAR COMPUTER/source/repos/Complete/Views/User/Getalluser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxHZXRhbGx1c2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WAQAR COMPUTER/source/repos/Complete/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/WAQAR COMPUTER/source/repos/Complete/Views/User/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSZWdpc3RyYXRpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/WAQAR COMPUTER/source/repos/Complete/Views/_ViewImports.cshtml]

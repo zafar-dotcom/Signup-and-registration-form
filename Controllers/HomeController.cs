@@ -1,10 +1,13 @@
 ﻿using Complete.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.Protocol;
 using System.Diagnostics;
 
 namespace Complete.Controllers
 {
+    [Route("api/[controller]")]
+    [ApiController]
     public class HomeController : Controller
     {
         DAL dal = new DAL();
@@ -14,7 +17,8 @@ namespace Complete.Controllers
         {
             _logger = logger;
         }
-
+        [Route("getemployee")]
+      //  [Authorize]
         public IActionResult Get_all()
         {
             return View(dal.GetEmployee());

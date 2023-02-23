@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H146oyHGCqmeMzJ00A9OCacRTXYwCx88U8/N3XmllM4=",
+  "Hash": "rY2R3MRSAU7gShsNr1hGae+AIBCIRw3lFLoygwGaP0U=",
   "Source": "Complete",
   "BasePath": "_content/Complete",
   "Mode": "Default",
@@ -1069,6 +1069,57 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\WAQAR COMPUTER\\source\\repos\\Complete\\wwwroot\\Upload\\excelldata.xlsx",
+      "SourceId": "Complete",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\WAQAR COMPUTER\\source\\repos\\Complete\\wwwroot\\",
+      "BasePath": "_content/Complete",
+      "RelativePath": "Upload/excelldata.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\excelldata.xlsx"
+    },
+    {
+      "Identity": "C:\\Users\\WAQAR COMPUTER\\source\\repos\\Complete\\wwwroot\\Upload\\survey report time.xlsx",
+      "SourceId": "Complete",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\WAQAR COMPUTER\\source\\repos\\Complete\\wwwroot\\",
+      "BasePath": "_content/Complete",
+      "RelativePath": "Upload/survey report time.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\survey report time.xlsx"
+    },
+    {
+      "Identity": "C:\\Users\\WAQAR COMPUTER\\source\\repos\\Complete\\wwwroot\\Upload\\survey_report_time.xlsx",
+      "SourceId": "Complete",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\WAQAR COMPUTER\\source\\repos\\Complete\\wwwroot\\",
+      "BasePath": "_content/Complete",
+      "RelativePath": "Upload/survey_report_time.xlsx",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Upload\\survey_report_time.xlsx"
     }
   ]
 }

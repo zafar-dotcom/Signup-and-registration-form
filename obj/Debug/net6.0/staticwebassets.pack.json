@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\Complete.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\WAQAR COMPUTER\\source\\repos\\Complete\\wwwroot\\Upload\\excelldata.xlsx",
+      "PackagePath": "staticwebassets\\Upload\\excelldata.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\WAQAR COMPUTER\\source\\repos\\Complete\\wwwroot\\Upload\\survey report time.xlsx",
+      "PackagePath": "staticwebassets\\Upload\\survey report time.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\WAQAR COMPUTER\\source\\repos\\Complete\\wwwroot\\Upload\\survey_report_time.xlsx",
+      "PackagePath": "staticwebassets\\Upload\\survey_report_time.xlsx"
+    },
+    {
       "Id": "C:\\Users\\WAQAR COMPUTER\\source\\repos\\Complete\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
