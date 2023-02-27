@@ -1,7 +1,11 @@
+using Complete.DAL_Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+var services = builder.Services;
+services.AddScoped<IUser_Login_Registraion, User_implement>();
 
 var app = builder.Build();
 

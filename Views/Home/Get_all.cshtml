@@ -3,6 +3,7 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+@Html.Raw( TempData["login_success"])
 @Html.Raw(TempData["delete"])
 @Html.Raw(TempData["Insertmessage"])
 @Html.Raw(TempData["update"])
