@@ -7,6 +7,66 @@ namespace Complete.DAL_Services
     public class User_implement : IUser_Login_Registraion
     {
         private readonly string str = "server=localhost;port=3306;uid=root;pwd=sobiazafar@2023;database=mvc_crud";
+
+        public bool Authenticate(User_model_jwt user)
+        {
+            using (MySqlConnection conn = new MySqlConnection(str))
+            {
+                conn.Open();
+
+                try
+                {
+                    using (MySqlCommand cmd = new MySqlCommand())
+                    {
+                        cmd.Connection = conn;
+                        cmd.CommandType = System.Data.CommandType.Text;
+                        cmd.CommandText = "select * from tbluser where email =@email AND password=@password";
+                        cmd.Parameters.AddWithValue("@email", user.EmailAddress);
+                        cmd.Parameters.AddWithValue("@password", user.Password);
+                        MySqlDataReader dr = cmd.ExecuteReader();
+                        DataTable tbl = new DataTable();
+                        tbl.Load(dr);
+                        List<User_model_login> lst = new List<User_model_login>();
+                        foreach (DataRow dar in tbl.Rows)
+                        {
+                            lst.Add(new User_model_login()
+                            {
+                                FullName = dar["fullname"].ToString(),
+                                Email = dar["email"].ToString(),
+                                Password = dar["password"].ToString(),
+
+                            });
+                        }
+
+
+                        if (lst.Count > 0)
+                        {
+                            return true;
+                        }
+                        else
+                        {
+                            return false;
+                        }
+                        //int status = cmd.ExecuteNonQuery();
+                        //if (status > 0)
+                        //{
+                        //    return true;
+                        //}
+                        //else
+                        //{
+                        //    return false;
+                        //}
+                    }
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
+            }
+
+        }
+
         public bool FindDuplicate(string email)
         {
             using(MySqlConnection conn=new MySqlConnection(str))

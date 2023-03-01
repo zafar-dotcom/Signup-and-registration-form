@@ -257,3 +257,11 @@ C:\Users\WAQAR COMPUTER\source\repos\Complete\obj\Debug\net6.0\refint\Complete.d
 C:\Users\WAQAR COMPUTER\source\repos\Complete\obj\Debug\net6.0\Complete.pdb
 C:\Users\WAQAR COMPUTER\source\repos\Complete\obj\Debug\net6.0\Complete.genruntimeconfig.cache
 C:\Users\WAQAR COMPUTER\source\repos\Complete\obj\Debug\net6.0\ref\Complete.dll
+C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

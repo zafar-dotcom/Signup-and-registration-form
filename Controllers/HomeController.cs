@@ -1,4 +1,5 @@
 ﻿using Complete.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using NuGet.Protocol;
 using System.Diagnostics;
@@ -14,7 +15,7 @@ namespace Complete.Controllers
         {
             _logger = logger;
         }
-
+        [Authorize(Roles ="admin,seller")]
         public IActionResult Get_all()
         {
             return View(dal.GetEmployee());
