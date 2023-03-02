@@ -6,6 +6,9 @@ using System.Diagnostics;
 
 namespace Complete.Controllers
 {
+   // [Authorize(Policy = "UserPolicy")]
+   // [Authorize(Roles ="Admin")]
+
     public class HomeController : Controller
     {
         DAL dal = new DAL();
@@ -15,12 +18,33 @@ namespace Complete.Controllers
         {
             _logger = logger;
         }
-        [Authorize(Roles ="admin,seller")]
+        public IActionResult Index()
+        {
+            return View();  
+        }
+        [Authorize]
+        //[Authorize(Roles ="admin,seller")]
         public IActionResult Get_all()
         {
             return View(dal.GetEmployee());
         }
+        [Authorize(Policy = "UserPolicy")]
+        public IActionResult UserPolicy()
+        {
+            return RedirectToAction("Get_all");
+        }
 
+        [Authorize(Roles = "User")]
+        public IActionResult UsersRole()
+        {
+            return RedirectToAction("Get_all");
+        }
+        [Authorize(Roles = "Admin")]
+        public ActionResult AdminUser()
+        {
+            return RedirectToAction("Get_all");
+
+        }
         public IActionResult Create()
         {   
             return View();

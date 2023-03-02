@@ -1,6 +1,9 @@
+using Complete.CustomHandler;
 using Complete.DAL_Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -23,6 +26,37 @@ services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Key"]))
                    };
                });
+services.AddAuthentication("CookieAuthentication")
+                .AddCookie("CookieAuthentication", config =>
+                {
+                    config.Cookie.Name = "UserLoginCookie";
+                    config.LoginPath = "/Login/UserLogin";
+                    config.AccessDeniedPath = "/Login/UserAccessDenied";
+                });
+/*services.AddAuthorization(options =>
+{
+    var userauthpolicybuilder = new AuthorizationPolicyBuilder();
+    options.DefaultPolicy = userauthpolicybuilder
+                            .RequireAuthenticatedUser()
+                            .RequireClaim(ClaimTypes.DateOfBirth)
+                            .Build();
+
+});*/
+services.AddAuthorization(opt =>
+{
+    opt.AddPolicy("UserPolicy", policybulider =>
+    {
+        policybulider.UserRequireCustomClaim(ClaimTypes.Email);
+        policybulider.UserRequireCustomClaim(ClaimTypes.DateOfBirth);
+    });
+
+
+});
+services.AddScoped<IAuthorizationHandler, PoliciesAuthorizationHandler>();
+services.AddScoped<IAuthorizationHandler, RolesAuthorizationHandler>();
+
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -42,6 +76,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Get_all}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
