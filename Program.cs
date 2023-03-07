@@ -13,6 +13,7 @@ builder.Services.AddControllersWithViews();
 var services = builder.Services;
 var Configuration = builder.Configuration;
 services.AddScoped<IUser_Login_Registraion, User_implement>();
+services.AddScoped<ICustomer, Customer_implement>();
 services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                .AddJwtBearer(options => {
                    options.TokenValidationParameters = new TokenValidationParameters

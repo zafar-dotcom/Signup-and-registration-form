@@ -265,3 +265,5 @@ C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\Microsoft.Identit
 C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
+C:\Users\WAQAR COMPUTER\source\repos\Complete\bin\Debug\net6.0\libman.json
